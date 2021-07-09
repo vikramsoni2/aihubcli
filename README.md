@@ -11,6 +11,8 @@ example use:
     aihubcli create mytestproject
     
 
+It generates the project with following structure
+
     Project
     |
     +--- Input
