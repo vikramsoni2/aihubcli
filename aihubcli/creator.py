@@ -2,11 +2,11 @@ import os
 from importlib_resources import files, as_file
 import zipfile
 
-def createProject(projectname):
+def createProject(projectname, template='default'):
     path = os.getcwd()
     print ("setting up new projet in directory %s" % path)
 
-    template_file = files('aihubcli').joinpath('templates/default.zip')
+    template_file = files('aihubcli').joinpath(f'templates/{template}.zip')
 
     try:
         os.mkdir(path + '/' + projectname)

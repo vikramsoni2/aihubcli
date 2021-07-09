@@ -9,14 +9,14 @@ def cli():
 
 @cli.command()
 @click.argument('name')
-@click.option('-f','--file', default=None, help='number of greetings')
-def create(name, file):
-    click.echo(f'creating project with name {name} and template file {file}')
-    createProject(name)
+@click.option('-t','--template', default='default', help='name of the template to use')
+def create(name, template):
+    click.echo(f'creating project with name {name} and template file {template}')
+    createProject(name, template)
 
 @cli.command()
-def describe():
-    click.echo('Describe strcture of projects')
+def list():
+    click.echo('template name: default \n\nCurrently there is only one default template available. we can register more templates in the project')
 
 
 if __name__ == '__main__':
