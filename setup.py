@@ -33,8 +33,8 @@ setup (
  long_description=README,
  long_description_content_type="text/markdown",
  license='MIT',
-#  url='https://github.com/vikramsoni2/aihub-cli',
-#  download_url='https://github.com/CITGuru/cver/archive/1.0.0.tar.gz',
+ url='https://github.com/vikramsoni2/aihubcli',
+ download_url='https://github.com/vikramsoni2/aihubcli/dist/aihubcli-1.0.0.tar.gz',
  dependency_links=dependency_links,
  author_email='vikram9880@gmail.com',
  classifiers=[
