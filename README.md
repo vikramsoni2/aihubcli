@@ -7,6 +7,7 @@ installaton:
     pip install aihubcli
 
 example use:  
+    
     aihubcli create mytestproject
     
 
